@@ -1,0 +1,215 @@
+body {
+  width: 100%;
+  height: 100%;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;;
+}
+
+span {
+  font-size: 10px;
+}
+
+/*Top Header*/
+.top-header {
+  width: 100%;
+  height: 15%;
+  margin-top: 5%;
+}
+
+.top-header-left {
+  height: 97%;
+  width: 12%;
+}
+/*Right Side Header Div*/
+.top-header-right {
+  height: 80%;
+  float: right;
+  display: flex;
+  width: 65%;
+  margin-right: 10%;
+}
+
+/*General Images*/
+/*.my-image {
+  max-width: 100%; 
+  height:auto;
+}*/
+
+/*Brand Inspiration Image*/
+.brand-inspiration-image {
+  float: left;
+  height: 85%;
+  margin-left: 10%;
+}
+
+/*Strategy Span*/
+.span-left-float {
+  float: left;
+  margin-right: 50%;
+  font-size: 10px;
+}
+
+/*CMO image*/
+.cmo-council-image {
+  max-height: 40%;
+  max-width: 80%;
+}
+
+/*Partnership Part*/
+.partnership-div {
+  max-height: 40%;
+  width: 20%;
+  margin-left: 10%;
+}
+.partnership-div-message {
+  font-size: 10px;
+}
+
+.top-header-navbar-container {
+  display: flex;
+  height: 20%;
+  width: 65%;
+  clear: right;
+  /*margin-bottom: 1%;*/
+}
+.navbar-inner-div {
+  margin: 0 auto;
+  font-size: 16px;
+  font-weight: bold;
+  color: #b30059;
+}
+
+.highlighted-inner-div {
+  border-bottom: 8px solid #b30059;
+  /*@media screen and ()*/
+}
+
+/*Fixed Navbar*/
+.fixed-navbar {
+  width: 100%;
+  height: 15%;
+}
+
+.fixed-navbar-color {
+  width: 100%;
+  height: 70%;
+  background-color: #b30059;
+  position: relative;
+
+}
+
+.fixed-navbar-text {
+  position: absolute;
+  font-size: 24px;
+  color: white;
+  margin-left: 10%;
+  bottom: 0;
+  font-weight: 200;
+}
+.fixed-navbar-navigation {
+  position: relative;
+  display: flex;
+  margin-left: 2.5%;
+}
+
+.project-navigation {
+  position: relative;
+  top: 50%;
+  transform: translateY(25%);  
+  width: 80%;
+  height: 30%;
+  margin: 0 auto;
+  font-size: 12px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: #b30059;
+}
+
+/*Project Content*/
+.project-content {
+  height: 150%;
+  display: flex;
+  flex-direction: column;
+}
+/*Project Overview Content*/
+.project-overview {
+  height: 50%;
+}
+.project-banner-container {
+  width: 100%;
+  height: 30%;
+}
+.banner-image {
+  width: 100%;
+  min-height: 75%;
+  max-height: 150%;
+}
+
+.brand-innovation-container {
+  width: 60%;
+  height: 40%;
+  display: flex;
+  /*float: left;*/
+  margin: 2% auto 2% auto;
+  position: relative;
+}
+.brand-innovation-image {
+  height: 60%;
+  width: 25%;
+  position: absolute;
+  bottom: 0;
+
+}
+.brand-innovation-side-container {
+  position: absolute;
+  bottom: 0;
+  margin-left: 35%;
+  font-weight: bold;
+}
+
+.brand-innovation-title {
+  margin-bottom: 2%;
+  color: #b30059;
+}
+.brand-innovation-sub-title {
+  font-weight: bold;
+}
+.brand-innovation-text-container {
+  font-size: 13px;
+}
+.brand-innovation-text {
+  width: 60%;
+  margin: 0 auto 2% auto;
+
+}
+.brand-innovation-more-text {
+  width: 60%;
+  margin: 0 auto 4% auto;
+  display: none;
+}
+
+.more-span, .less-span{
+  color: #b30059;
+  font-weight: bold;
+}
+.more-span:hover, .less-span:hover {
+  text-decoration: underline;
+}
+
+/* Project Elements/Resources */
+.project-program-elements-resources {
+  border-top: 2px solid #b30059;
+  width: 80%;
+  height: 20%;
+  margin: 0 auto;
+  clear: both;
+}
+.project-program-elements-title {
+  text-align: center;
+  font-weight: bold;
+}
+.project-program-elements-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
