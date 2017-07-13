@@ -1,6 +1,19 @@
-body {
-  width: 100%;
+
+/***************************************************************************************************************************************************
+General Declarations
+***************************************************************************************************************************************************/
+html {
+  max-width: 100%;
   height: 100%;
+  padding: 0;
+  margin: 0;
+  min-width: 360px;
+}
+body {
+  max-width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;;
 }
 
@@ -8,53 +21,61 @@ span {
   font-size: 10px;
 }
 
-/*Top Header*/
+/***************************************************************************************************************************************************
+  Top Header
+***************************************************************************************************************************************************/
 .top-header {
   width: 100%;
   height: 15%;
-  margin-top: 5%;
+  margin-top: 20px;
+  min-height: 120px;
 }
 
 .top-header-left {
   height: 97%;
   width: 12%;
 }
-/*Right Side Header Div*/
+
+/***************************************************************************************************************************************************
+  Right Side Header Div
+***************************************************************************************************************************************************/
 .top-header-right {
   height: 80%;
-  float: right;
+  float: left;
   display: flex;
   width: 65%;
-  margin-right: 10%;
 }
 
-/*General Images*/
-/*.my-image {
-  max-width: 100%; 
-  height:auto;
-}*/
 
-/*Brand Inspiration Image*/
+/***************************************************************************************************************************************************
+  Brand Inspiration Image
+***************************************************************************************************************************************************/
 .brand-inspiration-image {
   float: left;
-  height: 85%;
+  height: 90%;
+  width: 15%;
   margin-left: 10%;
 }
 
-/*Strategy Span*/
+/***************************************************************************************************************************************************
+  Strategy Span
+***************************************************************************************************************************************************/
 .span-left-float {
   float: left;
-  margin-right: 50%;
+  width: 100%;
+  margin-right: 20%;
   font-size: 10px;
+  margin-left: 1%;
 }
 
-/*CMO image*/
 .cmo-council-image {
   max-height: 40%;
   max-width: 80%;
 }
 
-/*Partnership Part*/
+/***************************************************************************************************************************************************
+  Partnership Part
+***************************************************************************************************************************************************/
 .partnership-div {
   max-height: 40%;
   width: 20%;
@@ -62,39 +83,74 @@ span {
 }
 .partnership-div-message {
   font-size: 10px;
+  width: 100%;
 }
-
+/***************************************************************************************************************************************************
+  Top Header Navbar 
+***************************************************************************************************************************************************/
 .top-header-navbar-container {
   display: flex;
   height: 20%;
   width: 65%;
   clear: right;
-  /*margin-bottom: 1%;*/
 }
 .navbar-inner-div {
   margin: 0 auto;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: bold;
   color: #b30059;
 }
-
-.highlighted-inner-div {
-  border-bottom: 8px solid #b30059;
-  /*@media screen and ()*/
+/*************************************************************************************************************************************************** 
+  About Menu 
+***************************************************************************************************************************************************/
+.about-menu {
+  display: none;
+  position: absolute;
+  list-style-type: none;
+  margin-top: 0.5%;
+  padding: 0;
+  z-index: 10;
+  font-weight: normal;
 }
 
-/*Fixed Navbar*/
+.about-menu-entry {
+  color: white;
+  background-color: #1C2833;
+  width: 150px;
+  min-height: 30px;
+  border-bottom: 1px solid white;
+  padding: 0 0 0 2px;
+  line-height: 30px;
+}
+
+.about-menu-entry:hover {
+  background-color: #b30059;
+  cursor: pointer;
+}
+
+.about-menu-last {
+  border-bottom: none;
+}
+
+.highlighted-inner-div {
+  border-bottom: 4px solid #b30059;
+}
+
+/***************************************************************************************************************************************************
+  Fixed Navbar
+***************************************************************************************************************************************************/
 .fixed-navbar {
   width: 100%;
   height: 15%;
+  z-index: 5;
+  min-height: 11px;
 }
 
 .fixed-navbar-color {
   width: 100%;
-  height: 70%;
+  height: 75%;
   background-color: #b30059;
   position: relative;
-
 }
 
 .fixed-navbar-text {
@@ -105,18 +161,23 @@ span {
   bottom: 0;
   font-weight: 200;
 }
+
 .fixed-navbar-navigation {
-  position: relative;
+  height: 25%;
   display: flex;
-  margin-left: 2.5%;
+  padding-left: 2.5%;
+  border-bottom: 2px solid #b30059;
+  background-color: white;
+}
+
+.project-navigation:hover {
+  cursor: pointer;
 }
 
 .project-navigation {
-  position: relative;
   top: 50%;
-  transform: translateY(25%);  
-  width: 80%;
-  height: 30%;
+  transform: translateY(25%);
+  height: 100%;
   margin: 0 auto;
   font-size: 12px;
   text-align: center;
@@ -125,16 +186,23 @@ span {
   color: #b30059;
 }
 
-/*Project Content*/
+/**************************************************************************************************************************************************
+  Project Content
+  Includes Overview, Elements and Resources, Resources, and Sponsors
+
+**************************************************************************************************************************************************/
 .project-content {
-  height: 150%;
+  min-height: 2100px;
   display: flex;
   flex-direction: column;
 }
-/*Project Overview Content*/
+/*********************************************************************************************
+  Project Overview 
+**********************************************************************************************/
 .project-overview {
   height: 50%;
 }
+
 .project-banner-container {
   width: 100%;
   height: 30%;
@@ -147,41 +215,42 @@ span {
 
 .brand-innovation-container {
   width: 60%;
-  height: 40%;
+  height: 20%;
   display: flex;
-  /*float: left;*/
   margin: 2% auto 2% auto;
-  position: relative;
+  min-height: 130px;
 }
-.brand-innovation-image {
-  height: 60%;
-  width: 25%;
-  position: absolute;
-  bottom: 0;
 
+.brand-innovation-image {
+  height: 65%;
+  width: 25%;
+  display: block;
+  margin: 5% 1%;
 }
+
 .brand-innovation-side-container {
-  position: absolute;
-  bottom: 0;
-  margin-left: 35%;
+  margin-left: 10%;
   font-weight: bold;
+  font-size: 14px;
 }
 
 .brand-innovation-title {
   margin-bottom: 2%;
+  margin-top: 15%;
   color: #b30059;
 }
 .brand-innovation-sub-title {
   font-weight: bold;
 }
 .brand-innovation-text-container {
-  font-size: 13px;
+  font-size: 12px;
+  clear: both;
 }
 .brand-innovation-text {
   width: 60%;
   margin: 0 auto 2% auto;
-
 }
+
 .brand-innovation-more-text {
   width: 60%;
   margin: 0 auto 4% auto;
@@ -194,22 +263,564 @@ span {
 }
 .more-span:hover, .less-span:hover {
   text-decoration: underline;
+  cursor: pointer;
 }
 
-/* Project Elements/Resources */
+/*********************************************************************************************
+  REUSABLE DIVIDER
+*********************************************************************************************/
 .project-program-elements-resources {
-  border-top: 2px solid #b30059;
-  width: 80%;
-  height: 20%;
+  border-top: 4px solid #b30059;
+  width: 78%;
+  min-height: 4%;
   margin: 0 auto;
-  clear: both;
+  color: #b30059;
 }
+
+/*********************************************************************************************
+  Elements and Resources
+*********************************************************************************************/
+
 .project-program-elements-title {
   text-align: center;
   font-weight: bold;
+  height: 4%;
 }
 .project-program-elements-container {
-  width: 100%;
+  width: 80%;
+  min-height: 440px;
+  height: 30%;
   display: flex;
   justify-content: center;
+  flex-direction: row;
+  margin: 0 auto;
+  flex-wrap: nowrap;
 }
+.project-program-elements-instance {
+  margin: 1% 1%;
+  height: 70%;
+  min-height: 400px;
+  width: 325px;
+  border: 1px solid #DCDCDC;
+}
+
+
+.project-program-element-header {
+  color: white;
+  background-color: #b30059;
+  text-align: center;
+  height: 4%;
+  padding: 2% 0;
+}
+
+
+.project-program-element-picture {
+  height: 40%;
+  background-color: #DCDCDC;
+}
+
+.project-program-element-text {
+  height: 50%;
+  margin: 2%;
+  font-size: 13px;
+}
+
+.project-program-element-text-header {
+  color: #b30059;
+  font-size: 17px;
+}
+
+.project-program-element-sub-header {
+  font-weight: bold;
+  font-size: 15px;
+  margin-bottom: 4%;
+}
+
+.download-or-more {
+  font-weight: bold;
+  color: #b30059;
+}
+
+.download-or-more:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/*********************************************************************************************
+  Resources 
+*********************************************************************************************/
+
+.project-resources-container {
+  width: 80%;
+  height: 60%;
+  min-height: 650px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 auto;
+}
+.project-resources-instance {
+  min-height: 370px;
+  width: 450px;
+  margin: 2% 1%;
+}
+.project-resources-instance-container {
+  width: 100%;
+  min-height: 275px;
+}
+
+.project-resources-instance-entry {
+  font-size: 11px;
+  margin: 2% 0;
+}
+
+.project-resources-instance-entry-title {
+  text-align: center;
+  background-color: black;
+  color: white;
+  height: 30px;
+  line-height: 30px;
+}
+
+.project-resources-instance-entry-text {
+  font-weight: bold;
+}
+.project-resources-instance-entry-source {
+  color: #666666;
+}
+
+.project-resources-instance-entry-button {
+  background-color: #b30059;
+  color: white;
+  width: 65px;
+  height: 30px;
+  font-size: 12px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  float: left;
+  text-align: center;
+  line-height: 30px;
+  clear: both;
+}
+
+/*********************************************************************************************
+  Resources addons (section under resources)
+*********************************************************************************************/
+
+.project-resources-addons-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 1% 0;
+  padding: 0;
+  justify-content: center;
+  clear: both;
+}
+
+.project-resources-addons-entry {
+  font-size: 11px;
+  width: 50%;
+  margin: 1% 0%;
+  color: #666666;
+}
+
+.project-resources-addons-entry-header {
+  color: white;
+  font-size: 14px;
+  background-color: #CBCBCB;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  width: 98%;
+
+}
+.project-resources-addons-entry-bold {
+  font-weight: bold;
+  margin-top: 1%;
+  width: 98%;
+}
+
+.project-resources-addons-entry-text {
+  width: 98%;
+}
+
+/*********************************************************************************************
+  Sponsors
+*********************************************************************************************/
+
+.sponsors {
+  height: 45%;
+  width: 80%;
+  margin: 1% auto;
+  overflow: hidden;
+}
+
+.sponsor-entry {
+  height: 40%;
+  margin: 2% 0;
+  min-height: 110px;
+}
+
+.sponsor-image {
+  min-width: 40%;
+  min-height: 40%;
+  margin: 0 auto;
+  display: block;
+}
+
+.sponsor-image-div {
+  height: 40%;
+  width: 35%;
+  float: left; 
+  margin-top: 2%;
+}
+
+.sponsor-text {
+  float: left;
+  width: 60%;
+  height: 100%;
+  font-size: 13px;
+}
+
+/*********************************************************************************************
+  Footer 
+*********************************************************************************************/
+
+.footer {
+  width: 100%;
+  min-width: 360px;
+  height: 40px;
+  background-color: #110F0E;
+  position: absolute;
+  float: left;
+  clear: both;
+}
+
+.footer-text-container {
+  position: absolute;
+  margin-left: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 100%;
+  width: 40%;
+  float: left;
+  color: white;
+  text-align: center;
+  font-size: 9px;
+  min-width: 360px;
+}
+.footer-text-copyright {
+  float: left;
+  height: 20px;
+  width: 30%;
+  margin-right: 5px;
+  line-height: 20px;
+
+}
+
+.footer-text-privacy {
+  float: left;
+  height: 20px;
+  width: 20%;
+  margin-left: 5px;
+  line-height: 20px;  
+  margin-right: 5px;
+
+}
+
+.footer-text-sitemap {
+  float: left;
+  height: 20px;
+  width: 15%;
+  line-height: 20px;
+  margin-left: 5px;
+
+}
+
+.separator {
+  float: left;
+  width: 1%;
+  height: 20px;
+  line-height: 20px;
+
+}
+
+
+/******************************************************************************************************************************************************************************************
+  Media Queries 
+******************************************************************************************************************************************************************************************/
+
+@media only screen and (max-width: 1325px) {
+  .project-program-elements-instance {
+    width: 275px;
+  }
+}
+
+
+@media only screen and (max-width: 1042px) {
+  .project-program-element-text {
+    font-size: 11px;
+  }
+  .project-program-element-text-header {
+    font-size: 14px;
+  }
+  .project-program-element-sub-header {
+    font-size: 12px;
+  }
+
+  .fixed-navbar-text {
+    font-size: 20px;
+  }
+  .highlighted-inner-div {
+    border-bottom:3px solid #b30059;
+  }
+  .navbar-inner-div {
+    font-size: 11px;
+  }
+  .project-navigation {
+    font-size: 9px;
+  }
+}
+
+
+@media only screen and (max-width: 855px) {
+  .project-resources-instance-entry {
+    font-size: 11px;
+  }
+  .sponsor-text {
+    font-size: 11.5px;
+  }
+}
+
+
+@media only screen and (max-width: 720px) {
+  .navbar-inner-div {
+    font-size: 9px;
+  }
+  .about-menu-entry {
+    width: 125px;
+    min-height: 20px;
+
+  }
+  .project-navigation {
+    font-size: 7px;
+  }
+  .cmo-council-image {
+    max-height: 30%;
+    max-width: 50%;
+  }
+
+  .brand-inspiration-image {
+    float: left;
+    height: 75%;
+    width: 18%;
+    margin-left: 8%;
+    margin-bottom: 10%;
+  }  
+
+  .partnership-div {
+    max-height: 25%;
+    width: 5%;
+    margin-left: 10%;
+  }
+  .partnership-div-message {
+    font-size: 7px;
+  }
+  .npes-image {
+    max-height: 20px;
+    max-width: 40px;
+  }
+  .top-header-right {
+    width: 50%;
+  }
+  .span-left-float {
+    font-size: 7px;
+    width: 300px;
+    margin-right: 1%;
+  }
+
+  .fixed-navbar-text {
+    font-size: 16px;
+  }
+
+  .project-banner-container {
+    height: 30%;
+  }
+
+  .banner-image {
+    width: 100%;
+    min-height: 75%;
+    max-height: 100%;
+  } 
+
+  .brand-innovation-container {
+    min-height: 150px;
+  }
+
+  .brand-innovation-image {
+    height: 60%;
+  }
+  .brand-innovation-side-container {
+    font-size: 10px;
+  }
+  .brand-innovation-title {
+    margin-top: 22%;
+  }
+  .brand-innovation-sub-title {
+    font-size: 9px;
+  }
+  .brand-innovation-text-container {
+    font-size: 9px;
+  } 
+  .more-span, .less-span {
+    font-size: 9px;
+  }   
+  .project-program-elements-resources {
+    min-height: 4%;
+  }
+
+  .project-program-elements-container {
+    display: block;
+    margin-bottom: 3%;
+    min-height: 1100px;
+  }
+
+  .project-program-elements-instance {
+    margin: 2% auto;
+    width: 100%;
+    height: 30%;
+    min-height: 350px;
+  }
+
+  .project-program-element-text {
+    font-size: 11px;
+  }
+
+  .project-program-element-text-header {
+    font-size: 14px;
+  }
+
+  .project-program-element-sub-header {
+    font-size: 13px;
+  }
+  .project-resources-instance {
+    margin: 4% auto;
+    width: 100%;
+  }
+
+  .project-resources-container {
+    display: block;
+    clear: both;
+    min-height: 960px;
+  }
+  .project-resources-instance-container {
+    margin: 2% auto;
+    width: 100%;
+    min-height: 225px;
+  }
+  .project-resources-instance-entry {
+    font-size: 10px;
+  }
+
+  .project-resources-instance-entry-button {
+    width: 55px;
+    height: 24px;
+    font-size:10px;
+  }
+
+  .project-resources-addons-entry {
+    font-size: 9px;
+  }
+
+  .project-resources-addons-entry-header {
+    font-size: 10px;
+    height: 20px;
+    line-height: 20px;
+  }
+
+  .sponsor-text {
+    font-size: 9px;
+  }
+}
+@media only screen and (max-width: 580px) {
+
+  .span-left-float { 
+    width: 240px;
+  }
+  .fixed-navbar-text {
+    font-size: 14px;
+  }
+  .navbar-inner-div {
+    font-size: 9px;
+  }
+  .project-navigation {
+    font-size: 7px;
+  }
+  .sponsor-text {
+    font-size: 8px;
+  }
+
+}
+@media only screen and (max-width: 480px) {
+
+  .navbar-inner-div {
+    font-size: 5px;
+  }
+  .about-menu-entry {
+    width: 70px;
+  }
+  .project-navigation {
+    font-size: 5px;
+  }
+
+  .brand-inspiration-image {
+    height: 70%;
+    width: 25%;
+    margin-left: 4%;
+  }  
+
+  .partnership-div-message {
+    font-size: 7px;
+  }
+
+  .span-left-float {
+    font-size: 6px;
+  }
+  .fixed-navbar-text {
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+
+  .brand-innovation-container {
+    min-height: 100px;
+  }
+
+  .brand-innovation-sub-title {
+    font-size: 9px;
+  }
+
+  .brand-innovation-text-container {
+    font-size: 7px;
+  }    
+
+  .project-program-element-text {
+    font-size: 9px;
+  }
+
+  .project-program-element-text-header {
+    font-size: 13px;
+  }
+
+  .project-program-element-sub-header {
+    font-size: 12px;
+  }
+
+  .sponsor-text {
+    font-size: 7px;
+  }
+  .footer-text-container {
+    font-size: 7px;
+    margin-left: 0;
+  }
+}
+
